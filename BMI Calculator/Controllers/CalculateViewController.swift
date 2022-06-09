@@ -41,10 +41,6 @@ class CalculateViewController: UIViewController {
         let height = heightSlider.value
         let weight = weightSlider.value
         calculatorBrain.calculateBMI(height:height, weight:weight)
-//        let bmi = weight/(height * height)
-//        print(bmi)
-//        bmiValue = String(format: "%.2f", bmi)
-        
         self.performSegue(withIdentifier: "goToResult", sender: self)
     }
     

@@ -13,11 +13,10 @@ struct CalculatorBrain {
     mutating func calculateBMI(height h:Float, weight w:Float) {
         bmiValue = w/(h * h)
         print(bmiValue!)
-        
     }
     
-    func getBMIValue() -> Float {
-        
+    func getBMIValue() -> String {
+        return String(format: "%.1f", bmiValue!)
     }
     
 }
